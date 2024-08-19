@@ -152,3 +152,10 @@ body{
     color: white;
     text-decoration: underline;
 }
+
+@media(max-width: 800px){
+    .wrapper{
+        width: 420px;
+        padding: 10px 15px 10px;
+    }
+}

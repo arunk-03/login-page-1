@@ -1,0 +1,68 @@
+<!-- Creating my first responsive login page in html -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="login-page-1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username">
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAsFJREFUSEuVV4F16jAMPG0SNoFJCpMAk8Am0EnIn0Q/Z8uJHMsh9Xt9fXVsSzqdTqogXAJAv3wRCNRO9c/H7wO8Eaw/PJSO1ueXv7xztZmO4S0/ExIDID8C/aeCESrvFP0Xf/3nbDjwumP6COCRDdvKd0eB3hV49lxex7sfasEZmoz2l+AGxb050EmHRbz5JCN92YlxwoiPMzpGfgTkKtBBAX67THvvCpAF1gqoNusrQgvw0mQgrQOygbxyNAOgn+KYAIf8hGW1yT1JV78QRJ9uqb1xs2gjeK7TJr/TqcOGzVSpOwynSAvMhNEI1IThz5083BF5K3LF9SeDQD+GvjPcBH2G4GHREOqxhq8upr2sZv5IJJKG0UTrBcFxlrLNmi459hyIL5T8EbWbCu4lT4YEy+xsbLtNbJtLqmd/l3IJwFLh44XZJBCj528aHMxAIlZTtraxaDsg31V5hmMwASnGC3EL7CMEJ6grtSohqxwHJdZrTOUZwk7j/KGxEZqiv6892ZIkF3G/k/RqfY/ErxtD0abtHC8vk9E/lkvmu1kCjCaZvwK8425ehxA/k+uCBj2pdqCZvCXJWHaLtK5u5ogDPCavj5oUq6q10R6NdNhIN59nn37GpbWqY+eElz9um3B8rYGSEmo2nWOfvkwNJnWrJXNVk6gQ98PEKeUsoP/GzHWE4GUqlpsG6hkt0upZpazbZBUKgo1Lcd49A/KwVtQMCM7wnJsP1OtyUGY+7eaVVyXbSoJjXLGoHTUCXpVKYPtjN9rBZJ+mCodr0vb8uRogHKvThTk3AlxU8KzH6314u+gzSfO13KMdWt7dmc0CnCo29vRvW75cdchJoCYs7ejDcuDMTBdtYKvq2P2HERf/CiHOYmUUngfAkr7enGUx9tS2D0FDtEBgo3JaHftD89gS3/KtzXHPQFM7vVADhPpT138DHCg4CwB2IAAAAABJRU5ErkJggg==" />
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password">
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAApRJREFUSEuVVsGB2zAMAydpukk8yd1NEmeS3iZJJ2k6iWpKtASZlJz6cxdLJkQQBCUIHwGQAPuTt7hXvBhHmb2V9vkYbHo4XgwOOgLXrf0T4LcNNfIFwAeAvwBegDwzQzOUw3IBHoF5Nq8AHiW+QJCQyp4XgO/t5X1Kr27N+/XbQcZBgE8Av1z2/eHWCm4AjQk7qAXwwExBQ6FMc3aamWaolOvazf7XtS8BnhHxRwnU8BOdKr0KoM9PqysrXw/wx0rwFKRlB3birWWiGsfJZgmkEkjWrUB9HVtkzXoF5AUkPdzh6dMaUN19U2gu330Zxa7UxkgWngCa8XMsNAH18XAbAy+j+jEwgGX7PQEujTQ7mGZJwLIAaRSQBRgCN6FH7cSFLvRy7y6CZIp1UjwF5gzJQFygCwQfSHIRpE9TqbbQq/PwFk2Vrb2uj+77bXRrizWXsg0dcHaisnAV4OF7cdxwgV/sjnaH4Hu3uP2cRVzVxiow9+1UBt2iO1d+oRm79ho5VzKraxYY0BX1VH0nuG0Zrcai9DO2U3Vn+ub9agiB8U8sjhjIhkLzx5FD5d6Hvwwy5q0j9Ap12wSjBzdl0REUJi5LHa4u4xO4VpBMNQP3UiFVdwu7oGOqLTzN40iAN/P2vZeoCw8GQpPkDapPxM4ZZ/n0Q3FkmZSx3Pla856u8qEO4jrUmFuCDKSjmnt9erdiEkY1HsncCmHjFyvS/B4VXYEN3+Zz1dtJO5VlL64px8GiGYiFciX19+oC/Njm7rXTg9NSZzguG/J5HaNLvZWSFfgGS3nK1Btlr0e+N04q3j6y2czi2tspdhG7QcqPtwXlO+zuptae8X840T7Gjn7PjeHomLHFBhy6wujjEwuJD2Rv/wGPKQ01pYCGpAAAAABJRU5ErkJggg==" />
+            </div>
+
+            <div class="remember-forgot">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Remember Me</label>
+                </div>
+                <a href="#">Forgot Password?</a>
+
+
+            </div>
+
+            <button class="submit-btn">Login</button>
+            <div class="register-line">
+                <p>Don't Have an Account? <a href="#">Sign Up</a> </p>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
